@@ -1,29 +1,31 @@
 :root {
     //brand colors 
---clr-brand: #ffb8ca; //brand color of the project;
---clr-brand-darker: #ffa5ba; // a bit darker version of brand color
---clr-brand-the-darkest: #e17992; //the darkest version of brand color
+--clr-brand: #84A178; //brand color of the project; 
+--clr-brand-lighter: #AEC6A5; // a bit darker version of brand color 
+--clr-brand-light: #9CBE8F;
+--clr-brand-darker: #84A278; 
+--clr-brand-darkest: #0A8817;//the darkest version of brand color
 
-//accent colors and hues
---clr-accent: #d41443; // accent color, is used for section headings and hover, focus effects
---clr-accent-darker: #c7133e; // darker version of accent color
+//accent colors
+--clr-accent: #F8D24E; // accent color, is used for section headings and hover, focus effects
+--clr-accent-darker:  ; // darker version of accent color
 
-//text colors hues
---clr-text-normal: #907e82; // most commont text color
---clr-text-darker: #000000; // color to darken a text
---clr-text-lighter: #ffffff; // color to lighter a text
+//text colors 
+--clr-text-normal: #FCFCFC; // most common text color
+--clr-text-dark: #131313; // color to darken a text
+--clr-text-light: #7A7A7A; // color to light a text
+--clr-text-lighter: #ABABAB; // color to lighter a text
 
-//background colors and hues
---clr-bg-normal: #fff5f6; // most common background color
+//background colors
+--clr-bg-normal: #D6936D; // most common background color
 --clr-bg-lighter: #fafafa; // lighter version of background
 --clr-bg-the-lightest: #ffffff; // the lightest virsion of background
 
 --clr-bg-bright-01: #f0d1a5; // color for bright background in PRODUCT section and OUR LOCATION version 01
---clr-bg-bright-02: #c2e297; //color for bright background in PRODUCT section and OUR LOCATION version 02
+--clr-bg-bright-02: #D5753F; //color for bright background in PRODUCT section and OUR LOCATION version 02
 
 //decoration colors
---clr-dots-cstm-rev: #d9d9d9; // color for dots that indicate switching to another comment in CUSTOMER REVIEW section
---clr-undrline-effect: #e1e1e1; //is used for underlined effect in OUR LOCATION
+--clr-dots-cstm-rev:    ; // color for dots that indicate switching to another comment in CUSTOMER REVIEW section
+--clr-undrline-effect: #E1E1E1; //is used for underlined effect in OUR LOCATION
   }
-
   
