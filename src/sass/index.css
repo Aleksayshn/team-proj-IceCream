@@ -39,7 +39,29 @@ img {
   display: block;
   max-width: 100%;
   height: auto;
-  width: 100%;
+}
+
+:root {
+  --clr-brand: #84A178;
+  --clr-brand-lighter: #AEC6A5;
+  --clr-brand-light: #9CBE8F;
+  --clr-brand-darker: #84A278;
+  --clr-brand-darkest: #0A8817;
+  --clr-accent: #F8D24E;
+  --clr-bg-normal: #D6936D;
+  --clr-bg-lighter: #fafafa;
+  --clr-bg-the-lightest: #ffffff;
+  --clr-bg-bright-01: #f0d1a5;
+  --clr-bg-bright-02: #D5753F;
+  --clr-undrline-effect: #E1E1E1;
+  --main-font: "Montserrat", sans-serif;
+  --second-font:"Seymour One", sans-serif;
+  --third-font:"Inter", sans-serif;
+  --clr-text-normal: #FCFCFC;
+  --clr-text-darkest: #000;
+  --clr-text-dark: #131313;
+  --clr-text-light: #7A7A7A;
+  --clr-text-lighter: #ABABAB;
 }
 
 .visually-hidden {
@@ -54,4 +76,43 @@ img {
           clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+body {
+  font-family: var(--main-font);
+  font-size: 16px;
+  line-height: 1.75;
+  color: #FCFCFC;
+}
+
+.button, .button-buy, .button-read {
+  width: 114px;
+  height: 42px;
+  background: var(--clr-accent);
+  border-radius: 10px;
+  border: none;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.25;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--clr-text-dark);
+}
+
+.button-buy, .button-read {
+  width: 152px;
+  color: var(--clr-text-darkest);
+  line-height: 1.2142857143;
+}
+
+.button-read {
+  width: 164px;
+  line-height: 1.2857142857;
+}
+
+.container {
+  max-width: 480px;
+  margin: 0 auto;
+  padding: 0 20px;
 }/*# sourceMappingURL=index.css.map */
