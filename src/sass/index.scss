@@ -1,2 +1,31 @@
-@import './common';
-@import './example';
+@import './base/normalize';
+@import './base/reset';
+@import './utils/variables';
+@import './utils/mixin';
+@import './utils/visually-hidden';
+@import './base/body';
+
+
+@import './common-styles/button';
+@import './common-styles/section';
+@import './common-styles/container';
+@import './common-styles/link';
+@import './common-styles/logo';
+@import './common-styles/primery-button';
+@import './common-styles/text';
+@import './common-styles/title';
+@import './components-layout/about';
+@import './components-layout/advantages';
+@import './components-layout/contacts';
+@import './components-layout/customer-reviews';
+@import './components-layout/example';
+@import './components-layout/footer';
+@import './components-layout/gallery';
+@import './components-layout/hero-header';
+@import './components-layout/hero-header';
+@import './components-layout/products';
+
+
+
+
+
