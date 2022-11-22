@@ -1,0 +1,67 @@
+@mixin scr($type) {
+    $mobile: 480px;
+    $tablet: 768px;
+    $desktop: 1200px;
+  
+    // mobile from 480 & > infinite
+    @if ($type == mobile) {
+      @media screen and (min-width: $mobile) {
+        @content;
+      }
+    }
+    // mobile to 768 & <
+    @if ($type == mobile-only) {
+      @media screen and (max-width: #{$tablet - 0.02}) {
+        @content;
+      }
+    }
+    // tablet from 768 & > infinite
+    @if ($type == tablet) {
+      @media screen and (min-width: $tablet) {
+        @content;
+      }
+    }
+    // tablet form 768 to 1200
+    @if ($type == tablet-only) {
+      @media screen and (min-width: $tablet) and (max-width: #{$desktop - 0.02}) {
+        @content;
+      }
+    }
+    // desktop from 1200 & > infinite
+    @if ($type == desktop) {
+      @media screen and (min-width: $desktop) {
+        @content;
+      }
+    }
+    @if ($type == not-mobile) {
+      @media screen and (min-width: #{$tablet}) {
+        @content;
+      }
+    }
+
+      @if ($type == not-desktop) {
+        @media screen and (max-width: #{$desktop - 0.02}) {
+          @content;
+        }
+      }
+
+}
+  @mixin retina {
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      @content;
+    }
+  }
+
+
+  @mixin grid ($indent: 30px) {
+    display: flex;
+    flex-wrap: wrap;
+    margin: calc(-1 * $indent / 2);
+  }
+  
+  @mixin grid-item($items: 1, $indent: 30px) {
+    width: calc((100% - $indent * $items) / $items);
+    margin: calc($indent / 2);
+  }
