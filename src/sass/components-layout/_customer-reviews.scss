@@ -1,0 +1,117 @@
+.gallery-wrap {
+    background-image: url('/src/images/gallery/bgrice1-mob@1x.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url('/src/images/gallery/bgrice1-mob@2x.jpg');
+    }
+    @media screen and (min-width: 768px) {
+      background-image: url('/src/images/gallery/mainbgr-tab@1x.jpg');
+      @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url('/src/images/gallery/mainbgr-tab@2x.jpg');
+  }
+    }
+  
+    @media screen and (min-width: 1200px) {
+      background-image: url('/src/images/gallery/bgrice1-desk@1x.jpg');
+      @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url('/src/images/gallery/bgrice2-desk@2x.jpg');
+    }
+    }
+  }
+  
+  .gallery__image {
+    min-width: 280px;
+    min-height: 130px;
+    margin: 0 auto;
+    margin-bottom: 80px;
+    @media screen and (min-width: 768px) {
+      min-width: 704px;
+      min-height: 180px;
+      margin-bottom: 100px;
+    }
+    @media screen and (min-width: 1200px) {
+      min-width: 1013px;
+      min-height: 422px;
+      margin-bottom: 140px;
+    }
+  }
+  
+  .customer-reviews__img {
+    min-width: 85px;
+    height: 85px;
+    margin: 0 auto;
+    border-radius: 50%;
+    margin-bottom: 32px;
+  }
+  
+  .customer-reviews__reviews {
+    margin: 0 auto;
+    min-width: 280px;
+    background-color: #84A178;
+    border-radius: 10px;
+    margin-bottom: 32px;
+  }
+  
+  .review {
+    font-size: 12px;
+    line-height: calc(31 / 12);
+    text-align: center;
+    padding: 35px 39px;
+    @media screen and (min-width: 768px) {
+      font-weight: 500;
+      font-size: 14px;
+      line-height: calc(26 / 14);
+      letter-spacing: 0.04em;
+      padding: 28px 80px;
+    }
+    @media screen and (min-width: 1200px) {
+      padding: 42px 74px;
+      font-size: 16px;
+      line-height: calc(30 / 16);
+    }
+  }
+  
+  .customer-reviews__customer {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: calc(37 / 20);
+    text-align: center;
+    color: var(--accent-txt-cl);
+    margin-bottom: 12px;
+    @media screen and (min-width: 768px) {
+      font-size: 16px;
+      line-height: calc(30 / 16);
+      margin-bottom: 32px;
+    }
+  }
+  
+  .customer-reviews__list {
+    display: flex;
+    justify-content: center;
+    gap: 18px;
+    padding-bottom: 393px;
+  }
+  
+  .customer-reviews__item {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #D9D9D9;
+  
+    &:hover {
+      background-color: #84A178;
+    }
+  
+  }
+  

@@ -8,24 +8,29 @@
 
 //accent colors
 --clr-accent: #F8D24E; // accent color, is used for section headings and hover, focus effects
---clr-accent-darker:  ; // darker version of accent color
-
-//text colors 
---clr-text-normal: #FCFCFC; // most common text color
---clr-text-dark: #131313; // color to darken a text
---clr-text-light: #7A7A7A; // color to light a text
---clr-text-lighter: #ABABAB; // color to lighter a text
 
 //background colors
 --clr-bg-normal: #D6936D; // most common background color
 --clr-bg-lighter: #fafafa; // lighter version of background
---clr-bg-the-lightest: #ffffff; // the lightest virsion of background
+--clr-bg-the-lightest: #ffffff; // the lightest version of background
 
 --clr-bg-bright-01: #f0d1a5; // color for bright background in PRODUCT section and OUR LOCATION version 01
 --clr-bg-bright-02: #D5753F; //color for bright background in PRODUCT section and OUR LOCATION version 02
 
 //decoration colors
---clr-dots-cstm-rev:    ; // color for dots that indicate switching to another comment in CUSTOMER REVIEW section
 --clr-undrline-effect: #E1E1E1; //is used for underlined effect in OUR LOCATION
-  }
+
+//text
+--main-font: 'Montserrat', sans-serif;
+--second-font:'Seymour One', sans-serif; 
+--third-font:'Inter', sans-serif;
+--clr-text-normal: #FCFCFC; // most common text color
+--clr-text-darkest: #000; // color to darken a text
+--clr-text-dark: #131313; 
+--clr-text-light: #7A7A7A; // color to light a text
+--clr-text-lighter: #ABABAB; // color to lighter a text
+}
+
+
+  
   

@@ -1,17 +1,14 @@
 .container {
-    width: 100%;
-    margin: 0 auto;
-    padding: 0 15px;
 
-    @media screen and (min-width: 480px) {
-        max-width: 480px;
-    }
+  max-width: 480px;
+  margin: 0 auto;
+  padding: 0 20px;
 
-    @media screen and (min-width: 768px) {
-        max-width: 768px;
-    }
-
-    @media screen and (min-width: 1200px) {
-        max-width: 1200px;
-    }
+  @include scr(tablet) {
+    max-width: 768px;
+  }
+  
+  @include scr(desktop) {
+    max-width: 1200px;
+  }
 }
