@@ -1,5 +1,13 @@
 .container {
-    max-width: 480px;
-    margin: 0 auto;
-    padding: 0 20px;
+  max-width: 480px;
+  margin: 0 auto;
+  padding: 0 20px;
+
+  @include scr(tablet) {
+    max-width: 768px;
   }
+  
+  @include scr(desktop) {
+    max-width: 1200px;
+  }
+}
