@@ -1,63 +1,64 @@
 .gallery {
     display: none;
     @media screen and (min-width: 768px) {
+      margin: 0;
+      padding: 0;
         display: block;
         position: relative;
-        padding-top: 218px;
       }
+    }
     
-      @media screen and (min-width: 1200px) {
-        padding-top: 451px;
-        }
-      }
+    .swiper {
+      width: 100%;
+      height: 100%;
+    }
 
-.swiper {
-    width: 100%;
-    height: 100%;
-  }
+    .swiper-slide {
+      text-align: center;
+    }
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+
+      /* Center slide text vertically */
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      align-items: center;
+    }
+
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .gallery .container {
+      @media screen and (min-width: 768px) {
+      position: absolute;
+      top: 50%;
+      left: 54%;
+      transform: translate(-50%, -50%);
+    z-index: 999;}
+    }
 
   .swiper-slide {
-    text-align: center;
-    font-size: 18px;
-    background: #fff;
-
-    /* Center slide text vertically */
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    -webkit-justify-content: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    -webkit-align-items: center;
-    align-items: center;
+    @media screen and (min-width: 768px) {
+      min-width: 704px;
+      min-height: 180px;
+    }
+    @media screen and (min-width: 1200px) {
+      min-width: 1013px;
+      min-height: 422px;
+    }
   }
-
-  .swiper-slide img {
-    display: block;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-
-  // .swiper-slide {
-//     // position: absolute;
-//     // top: 120%;
-//     // z-index: 999;
-//     left: 50%;
-//     transform: translate(-50%, -50%);
-//     min-width: 280px;
-//     min-height: 130px;
-//     margin: 0 auto;
-//     @media screen and (min-width: 768px) {
-//       min-width: 704px;
-//       min-height: 180px;
-//     }
-//     @media screen and (min-width: 1200px) {
-//       min-width: 1013px;
-//       min-height: 422px;
-//     }
-//   }
