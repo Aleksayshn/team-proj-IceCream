@@ -1,8 +1,10 @@
 .gallery-wrap {
+  display: none;
     background-image: url('/src/images/gallery/bgrice1-mob@1x.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+
     @media (min-device-pixel-ratio: 2),
       (-webkit-min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
@@ -10,6 +12,9 @@
       background-image: url('/src/images/gallery/bgrice1-mob@2x.jpg');
     }
     @media screen and (min-width: 768px) {
+      display: block;
+      position: relative;
+      padding-top: 218px;
       background-image: url('/src/images/gallery/mainbgr-tab@1x.jpg');
       @media (min-device-pixel-ratio: 2),
     (-webkit-min-device-pixel-ratio: 2),
@@ -20,6 +25,7 @@
     }
   
     @media screen and (min-width: 1200px) {
+      padding-top: 451px;
       background-image: url('/src/images/gallery/bgrice1-desk@1x.jpg');
       @media (min-device-pixel-ratio: 2),
       (-webkit-min-device-pixel-ratio: 2),
@@ -31,6 +37,10 @@
   }
   
   .gallery__image {
+    position: absolute;
+    top: -2%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     min-width: 280px;
     min-height: 130px;
     margin: 0 auto;
