@@ -1,0 +1,270 @@
+.about {
+  background-color: var(--clr-brand);
+  padding: 60px 0;
+
+  @include scr($type: tablet) {
+    padding-bottom: 204px;
+  }
+
+  @include scr($type: desktop) {
+    padding-bottom: 180px;
+  }
+}
+
+.about__titles {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-weight: 800;
+  font-size: 18px;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--clr-text-normal);
+
+  @include scr($type: tablet) {
+    font-size: 22px;
+  }
+
+  @include scr($type: desktop) {
+    font-size: 30px;
+  }
+}
+
+.about__title-second {
+  margin-top: 10px;
+  font-weight: 400;
+  font-size: 30px;
+  width: 200px;
+  font-family: 'Seymour One';
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 1.26;
+  letter-spacing: 0.04em;
+  text-align: center;
+
+  @include scr($type: tablet) {
+    font-size: 34px;
+    width: 100%;
+    letter-spacing: 0.06em;
+  }
+
+  @include scr($type: desktop) {
+    font-size: 36px;
+    letter-spacing: 0.06em;
+  }
+}
+
+.about__body {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about__main {
+  @include scr($type: tablet) {
+    display: flex;
+    width: 100%;
+    gap: 32px;
+    margin-top: 79px;
+  }
+
+  @include scr($type: desktop) {
+    gap: 100px;
+    margin-top: 82px;
+  }
+}
+
+.about__images {
+  width: 278.19px;
+  height: 278.25px;
+
+  @include scr($type: tablet) {
+    width: 336px;
+    height: 355.88px;
+  }
+
+  @include scr($type: desktop) {
+    width: 500px;
+    height: 529px;
+  }
+}
+
+.about__first-info {
+  width: 220px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.04em;
+
+  @include scr($type: tablet) {
+    width: 334px;
+    margin-top: 0px;
+    line-height: 1.76;
+    text-align: left;
+  }
+
+  @include scr($type: desktop) {
+    width: 463px;
+    font-size: 14px;
+  }
+}
+
+.about__second-info {
+  margin-top: 3.83px;
+  width: 220px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.04em;
+
+  @include scr($type: tablet) {
+    width: 334px;
+    margin-top: 8px;
+    text-align: left;
+    line-height: 1.76;
+  }
+
+  @include scr($type: desktop) {
+    width: 463px;
+    font-size: 14px;
+  }
+}
+
+.about__third-info {
+  @include scr($type: mobile-only) {
+    display: none;
+  }
+  margin-top: 8px;
+  width: 334px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.76;
+  text-align: left;
+  letter-spacing: 0.04em;
+
+  @include scr($type: desktop) {
+    width: 463px;
+    line-height: 1.94;
+    font-size: 14px;
+  }
+}
+
+.about__button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  width: 164px;
+  height: 42px;
+  background-color: var(--clr-accent);
+  border-radius: 10px;
+  box-shadow: (0px 4px 4px rgba(0, 0, 0, 0.25));
+  border: none;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.29;
+  text-align: center;
+
+  @include scr($type: tablet) {
+    margin-top: 48px;
+  }
+}
+
+// .about__button-icon {
+// }
+
+.about__list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 42.23px;
+  @include scr($type: tablet) {
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+  }
+}
+
+.about__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @include scr($type: mobile-only) {
+    &:not(:last-child) {
+      margin-bottom: 27.73px;
+    }
+  }
+}
+
+.about__ellipse {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  width: 50px;
+  background-color: var(--clr-accent);
+  border-radius: 50%;
+  margin-bottom: 16.02px;
+  @include scr($type: tablet) {
+    margin-bottom: 32px;
+  }
+  @include scr($type: desktop) {
+    margin-bottom: 40px;
+  }
+}
+
+.about__name {
+  font-weight: 700;
+  font-size: 36px;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  margin-bottom: 18px;
+  @include scr($type: tablet) {
+    font-size: 48px;
+    margin-bottom: 16px;
+  }
+  @include scr($type: desktop) {
+    font-size: 58px;
+  }
+}
+
+.about__info {
+  width: 230px;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.7;
+  text-align: center;
+  @include scr($type: tablet) {
+    font-size: 14px;
+    margin-bottom: 16px;
+    font-weight: 400;
+    width: 152px;
+  }
+  @include scr($type: desktop) {
+    font-size: 16px;
+    width: 300px;
+  }
+}
+
+.about__wrap {
+  @include scr($type: mobile-only) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+  }
+
+  @include scr($type: desktop) {
+    padding-top: 90px;
+  }
+}
