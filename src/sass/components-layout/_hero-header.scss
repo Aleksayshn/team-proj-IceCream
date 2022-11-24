@@ -1,6 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Seymour+One&display=swap");
+
 .first__screen {
     background-color: var(--clr-brand);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    max-width: 1600px;
 }
 
 .nav {
@@ -27,16 +30,13 @@
     &__open {
         background-color: transparent;
         border: none;
-        padding: 0;
+        margin: 0;
+        padding-top: 26px;
+        padding-right: 11px;
         margin-left: auto;
-        > svg {
-            margin-top: 26px;
-            margin-right: 11px;
-
-            @media screen and (min-width: 768px) {
-                margin-top: 39px;
-                margin-right: 0;
-            }
+        @media screen and (min-width: 768px) {
+            padding-top: 39px;
+            padding-right: 0;
         }
     }
 
@@ -84,14 +84,17 @@
             padding: 12px 34px;
             border-radius: 10px;
             border: none;
-            background-color: var(--clr-accent);
+            background: var(--clr-accent);
             color: var(--clr-text-dark);
+            transform: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
             > svg {
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                text-align: center;
                 margin-left: 8px;
+                stroke: aliceblue;
+            }
+
+            &:hover,
+            &:focus {
+                background: var(--clr-brand-darkest);
             }
         }
 
@@ -208,6 +211,12 @@
         border-radius: 10px;
         border: none;
         width: 152px;
+        transform: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+        &:hover,
+        &:focus {
+            background: var(--clr-brand-darkest);
+        }
 
         > svg {
             padding: 0 auto;
@@ -217,5 +226,72 @@
         @media screen and (min-width: 768px) {
             display: none;
         }
+    }
+}
+
+.hero {
+    background-image: url("../images/hero/Frame 27.png");
+    background-repeat: no-repeat;
+    background-position: bottom;
+    &__title {
+        width: 247px;
+        margin-top: 110px;
+        margin-bottom: 32px;
+        font-family: "Seymour One";
+        font-weight: 400;
+        font-size: 26px;
+        line-height: 33px;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+        color: var(--clr-text-normal);
+    }
+
+    &__wrap {
+        display: flex;
+        justify-content: baseline;
+    }
+
+    &__btn1 {
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 8px;
+        line-height: 10px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        color: var(--clr-text-dark);
+        border: 2px solid var(--clr-accent);
+        border-radius: 8px;
+        width: 62px;
+        height: 24px;
+        margin-right: 8px;
+    }
+
+    &__btn2 {
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 8px;
+        line-height: 10px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        text-decoration-line: underline;
+        border: none;
+        background-color: transparent;
+
+        color: var(--clr-accent);
+    }
+
+    &__img {
+        display: block;
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+        object-position: center;
+        z-index: 10;
+        position: absolute;
     }
 }
