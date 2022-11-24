@@ -78,24 +78,14 @@
             <a href="#products" class="nav__link">Our products</a>
           </li>
           <li class="li nav__item">
-            <a href="#contact" class="nav__link">Contact</a>
+            <a href="#contact" class="nav__link">Contact </a>
           </li>
         </ul>
+
         <button type="button" class="nav__button">
-          Buy now<svg
-            width="12"
-            height="12"
-            viewBox="0 0 12 12"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M4 2L8.95 6L4 10"
-              stroke="#131313"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            />
+          Buy now
+          <svg width="12" height="12">
+            <use href="./images/icon.svg/symbol-defs.svg#nav-arrow"></use>
           </svg>
         </button>
       </nav>
@@ -189,6 +179,39 @@
       </div>
     </div>
 
-    <div class="first__hero"></div>
+    <div class="first__hero hero">
+      <div class="hero__column1">
+        <h1 class="hero__title">ice cream made with passion</h1>
+        <div class="hero__wrap">
+          <button type="button" href="#products" class="hero__btn1">
+            Products
+          </button>
+          <button type="button" href="#about" class="hero__btn2">
+            How it’s made?
+          </button>
+        </div>
+        <div class="hero__wrap2">
+            
+        </div>
+      </div>
+      
+        <img
+          srcset="
+          ./images/hero/ice-cream-smiles-mob.png     170w,
+            ./images/hero/ice-cream-smiles-mob-2x.png  340w,
+            ./images/hero/ice-cream-smiles-tab.png     270w,
+            ./images/hero/ice-cream-smiles-tab-2x.png  540w,
+            ./images/hero/ice-cream-smiles-desk.png    484w,
+            ./images/hero/ice-cream-smiles-desk-2x.png 968w
+          "
+          src="./images/hero/ice-cream-smiles-desk.png"
+          sizes="(min-width: 1200px) 484px, (min-width: 768px) 270px, (min-width: 480px) 170w, 100vw"
+          width="170"
+          height="219"
+          alt="ice cream"
+          class="hero__img"
+        />
+    
+    </di>
   </div>
 </section>
