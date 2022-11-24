@@ -1,61 +1,40 @@
-.gallery-wrap {
+.customer-reviews {
   display: none;
-    background-image: url('/src/images/gallery/bgrice1-mob@1x.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
 
-    @media (min-device-pixel-ratio: 2),
-      (-webkit-min-device-pixel-ratio: 2),
-      (min-resolution: 192dpi),
-      (min-resolution: 2dppx) {
-      background-image: url('/src/images/gallery/bgrice1-mob@2x.jpg');
-    }
     @media screen and (min-width: 768px) {
       display: block;
       position: relative;
       padding-top: 218px;
-      background-image: url('/src/images/gallery/mainbgr-tab@1x.jpg');
+      background-image: url('/src/images/gallery/tablet/mainbgr-tab@1x.jpg');
       @media (min-device-pixel-ratio: 2),
     (-webkit-min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-    background-image: url('/src/images/gallery/mainbgr-tab@2x.jpg');
+    background-image: url('/src/images/gallery/tablet/mainbgr-tab@2x.jpg');
   }
     }
   
     @media screen and (min-width: 1200px) {
       padding-top: 451px;
-      background-image: url('/src/images/gallery/bgrice1-desk@1x.jpg');
+      background-image: url('/src/images/gallery/desktop/mainbgr-desk@1x.jpg');
       @media (min-device-pixel-ratio: 2),
       (-webkit-min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
-      background-image: url('/src/images/gallery/bgrice2-desk@2x.jpg');
+      background-image: url('/src/images/gallery/desktop/mainbgr-desk@2x.jpg');
     }
     }
+
+    @media screen and (min-width: 1900px) {
+      background-image: url('/src/images/gallery/big-desctop/bgrice-1900desk@1x.jpg');
+      @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url('/src/images/gallery/big-desctop/bgrice-1900desk@2x.jpg');
   }
-  
-  .gallery__image {
-    position: absolute;
-    top: -2%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    min-width: 280px;
-    min-height: 130px;
-    margin: 0 auto;
-    margin-bottom: 80px;
-    @media screen and (min-width: 768px) {
-      min-width: 704px;
-      min-height: 180px;
-      margin-bottom: 100px;
-    }
-    @media screen and (min-width: 1200px) {
-      min-width: 1013px;
-      min-height: 422px;
-      margin-bottom: 140px;
-    }
-  }
+}
+}
   
   .customer-reviews__image {
     min-width: 85px;
