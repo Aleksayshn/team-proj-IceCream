@@ -30,10 +30,16 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
 
     <script>
-      var swiper = new Swiper(".mySwiper", {
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
+      var swiper = new Swiper(".gallery-wrapper", {
+        autoplay: {
+          pauseOnMouseEnter: true,
+          delay: 1000,
+        }
+      });
+      var swiper = new Swiper(".review-wrapper", {
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true,  
         },
       });
     </script>
