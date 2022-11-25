@@ -1,29 +1,24 @@
 @import url("https://fonts.googleapis.com/css2?family=Seymour+One&display=swap");
 
-.first__screen {
+.first {
     background-color: var(--clr-brand);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    max-width: 1600px;
 }
 
 .nav {
     display: flex;
     align-items: baseline;
-    justify-content: space-around;
+    justify-content: space-between;
 
     &__logo {
-        position: absolute;
-        top: 12px;
-        left: 20px;
+        margin-top: 12px;
 
         @media screen and (min-width: 768px) {
-            top: 20px;
-            left: 32px;
+            margin-top: 20px;
         }
 
         @media screen and (min-width: 1200px) {
-            top: 8px;
-            left: 16px;
+            margin-top: 8px;
         }
     }
 
@@ -86,22 +81,32 @@
             border: none;
             background: var(--clr-accent);
             color: var(--clr-text-dark);
-            transform: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+            transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background 250ms cubic-bezier(0.4, 0, 0.2, 1),
+                stroke 250ms cubic-bezier(0.4, 0, 0.2, 1);
+            stroke: var(--clr-text-dark);
+
             > svg {
                 margin-left: 8px;
-                stroke: aliceblue;
+                stroke: currentColor;
             }
 
-            &:hover,
+            &:hover {
+                background: var(--clr-brand-darkest);
+            }
             &:focus {
                 background: var(--clr-brand-darkest);
+                color: var(--clr-text-normal);
+                stroke: var(--clr-text-normal);
+            }
+            &:default {
+                background: var(--clr-text-lighter);
+                color: var(--clr-text-darkest);
             }
         }
 
         @media screen and (min-width: 1200px) {
             margin-left: auto;
             margin-top: 28px;
-            margin-right: 1px;
         }
     }
 }
@@ -211,16 +216,27 @@
         border-radius: 10px;
         border: none;
         width: 152px;
-        transform: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background 250ms cubic-bezier(0.4, 0, 0.2, 1),
+            stroke 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        stroke: var(--clr-text-dark);
 
-        &:hover,
+        &:hover {
+            background: var(--clr-brand-darkest);
+        }
         &:focus {
             background: var(--clr-brand-darkest);
+            color: var(--clr-text-normal);
+            stroke: var(--clr-text-normal);
+        }
+
+        &:default {
+            background: var(--clr-text-lighter);
+            color: var(--clr-text-darkest);
         }
 
         > svg {
-            padding: 0 auto;
             margin-left: 7px;
+            stroke: currentColor;
         }
 
         @media screen and (min-width: 768px) {
@@ -230,25 +246,97 @@
 }
 
 .hero {
-    background-image: url("../images/hero/Frame 27.png");
+    margin: 0;
+    padding: 0;
+    background-image: url("./../images/hero/background/substrate-mob-1x.png");
+
+    @media screen and (min-device-pixel-ratio: 2),
+        screen and (-webkit-min-device-pixel-ratio: 2),
+        screen and (min-resolution: 192dpi),
+        screen and (min-resolution: 2dppx) {
+        background-image: url("./../images/hero/background/substrate-mob-2x.png");
+    }
+
+    @media screen and (min-width: 481px) {
+        background-image: url("./../images/hero/background/substrate-tab-1x.png");
+
+        @media screen and (min-device-pixel-ratio: 2),
+            screen and (-webkit-min-device-pixel-ratio: 2),
+            screen and (min-resolution: 192dpi),
+            screen and (min-resolution: 2dppx) {
+            background-image: url("./../images/hero/background/substrate-tab-2x.png");
+        }
+    }
+
+    @media screen and (min-width: 769px) {
+        background-image: url("./../images/hero/background/substrate-desk-1x.png");
+
+        @media screen and (min-device-pixel-ratio: 2),
+            screen and (-webkit-min-device-pixel-ratio: 2),
+            screen and (min-resolution: 192dpi),
+            screen and (min-resolution: 2dppx) {
+            background-image: url("./../images/hero/background/substrate-desk-2x.png");
+        }
+    }
     background-repeat: no-repeat;
     background-position: bottom;
+    background-attachment: scroll;
+    background-size: auto;
+
+    &__container {
+        display: block;
+        margin: 0 auto;
+
+        @media screen and (min-width: 768px) {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            position: relative;
+            flex-direction: none;
+        }
+    }
+}
+
+.column1 {
+    padding-bottom: 14px;
+
+    @media screen and (min-width: 1200px) {
+        padding-bottom: 73px;
+    }
+
     &__title {
         width: 247px;
         margin-top: 110px;
         margin-bottom: 32px;
         font-family: "Seymour One";
-        font-weight: 400;
         font-size: 26px;
         line-height: 33px;
         letter-spacing: 0.04em;
         text-transform: uppercase;
         color: var(--clr-text-normal);
+
+        @media screen and (min-width: 768px) {
+            font-size: 18px;
+            line-height: 23px;
+            width: 183px;
+            margin-top: 104px;
+            margin-bottom: 20px;
+        }
+        @media screen and (min-width: 1200px) {
+            font-size: 38px;
+            line-height: 48px;
+            width: 367px;
+        }
     }
 
     &__wrap {
         display: flex;
         justify-content: baseline;
+        margin-bottom: 20px;
+
+        @media screen and (min-width: 768px) {
+            margin-bottom: 0;
+        }
     }
 
     &__btn1 {
@@ -262,14 +350,41 @@
         text-align: center;
         justify-content: center;
         color: var(--clr-text-dark);
+        background-color: transparent;
         border: 2px solid var(--clr-accent);
         border-radius: 8px;
         width: 62px;
         height: 24px;
         margin-right: 8px;
+
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+        &:hover {
+            border: 2px solid var(--clr-brand-darkest);
+        }
+
+        &:focus {
+            border: 2px solid var(--clr-brand-darkest);
+            color: var(--clr-text-normal);
+        }
+        &:default {
+            border: 2px solid var(--clr-text-lighter);
+            color: var(--clr-text-darkest);
+        }
+
+        @media screen and (min-width: 1200px) {
+            width: 134px;
+            height: 42px;
+
+            font-size: 14px;
+            line-height: 18px;
+        }
     }
 
     &__btn2 {
+        width: 83px;
+        height: 24px;
+
         font-family: "Montserrat";
         font-style: normal;
         font-weight: 600;
@@ -281,17 +396,168 @@
         text-decoration-line: underline;
         border: none;
         background-color: transparent;
-
         color: var(--clr-accent);
+
+        &:hover {
+            color: var(--clr-brand-darkest);
+        }
+        &:focus {
+            color: var(--clr-text-normal);
+        }
+
+        &:default {
+            color: var(--clr-text-lighter);
+        }
+
+        @media screen and (min-width: 1200px) {
+            width: 154px;
+            height: 40px;
+
+            font-size: 14px;
+            line-height: 17px;
+        }
+    }
+
+    &__wrap2 {
+        display: none;
+        @media screen and (min-width: 768px) {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 28px;
+
+            @media screen and (min-width: 1200px) {
+                margin-top: 42px;
+            }
+        }
+
+        > ul {
+            margin-left: 33px;
+            width: 151px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+
+            @media screen and(min-width: 1200px) {
+                width: 200px;
+                margin-left: 14px;
+                gap: 32px;
+            }
+        }
+    }
+
+    &__arrow {
+        fill: var(--clr-text-normal);
+
+        &:hover {
+            fill: var(--clr-text-dark);
+        }
+    }
+
+    &__img2 {
+        width: 152px;
+        height: 152px;
+
+        @media screen and (min-width: 1200px) {
+            width: 225px;
+            height: 225px;
+        }
+    }
+
+    &__subtitle {
+        font-weight: 400;
+        font-size: 12px;
+        color: var(--clr-text-normal);
+
+        @media screen and (min-width: 1200px) {
+            font-size: 14px;
+        }
+    }
+}
+
+.column2 {
+    width: 170px;
+    height: 219px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+
+    @media screen and (min-width: 768px) {
+        width: 270px;
+        height: 343px;
+        position: absolute;
+        bottom: 0;
+        right: 10%;
+    }
+    @media screen and (min-width: 1200px) {
+        width: 484px;
+        height: 590px;
     }
 
     &__img {
-        display: block;
         width: 100%;
-        height: auto;
-        object-fit: contain;
-        object-position: center;
-        z-index: 10;
-        position: absolute;
+        height: 100%;
+
+        @media screen and (min-width: 768px) {
+            position: relative;
+        }
+    }
+}
+
+.column3 {
+    display: none;
+
+    @media screen and (min-width: 768px) {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        text-align: right;
+        margin-top: 28px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        margin-top: 56px;
+    }
+    > ul {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        @media screen and (min-width: 1200px) {
+            gap: 16px;
+        }
+    }
+
+    &__statistic {
+        font-family: "Montserrat";
+        font-weight: 900;
+        font-size: 28px;
+        line-height: 34px;
+        text-align: right;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+
+        color: var(--clr-text-dark);
+        margin-bottom: 4px;
+
+        @media screen and (min-width: 1200px) {
+            font-size: 46px;
+            line-height: 56px;
+        }
+    }
+
+    &__subline {
+        font-family: "Montserrat";
+        font-weight: 400;
+        font-size: 8px;
+        line-height: 10px;
+        text-align: right;
+        color: var(--clr-text-normal);
+
+        @media screen and (min-width: 1200px) {
+            font-size: 14px;
+            line-height: 17px;
+        }
     }
 }
