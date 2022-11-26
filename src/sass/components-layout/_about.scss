@@ -173,14 +173,30 @@
   line-height: 1.29;
   text-align: center;
   cursor: url('/src/images/icon.svg/cursor.svg'), auto;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover {
+    background-color: var(--clr-brand-darkest);
+  }
+
+  &:focus {
+    background-color: var(--clr-brand-darkest);
+    color: var(--clr-text-normal);
+  }
+
+  &:disabled {
+    background-color: var(--clr-text-lighter);
+  }
 
   @include scr($type: tablet) {
     margin-top: 48px;
   }
 }
 
-// .about__button-icon {
-// }
+.about__button-icon {
+  fill: currentColor;
+}
 
 .about__list {
   display: flex;
