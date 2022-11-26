@@ -5,7 +5,7 @@
     display: block;
     position: relative;
     padding-top: 218px;
-    padding-bottom: 124px;
+    padding-bottom: 384px;
     
     margin-left: auto;
     margin-right: auto;
@@ -22,7 +22,7 @@
 
   @include scr(desktop) {
     padding-top: 451px;
-    padding-bottom: 124px;
+    padding-bottom: 200px;
     background-image: url('/src/images/gallery/desktop/mainbgr-desk@1x.jpg');
     @include retina {
       background-image: url('/src/images/gallery/desktop/mainbgr-desk@2x.jpg');
