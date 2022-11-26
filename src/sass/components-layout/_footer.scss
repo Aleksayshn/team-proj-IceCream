@@ -86,7 +86,11 @@
 
 .social__link {
 display: block;
+height: 34px;
 color: #84A178;
+transition-property: color;
+transition-duration: 250ms;
+transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social__link:hover {
@@ -99,7 +103,6 @@ color: #fcfcfc;
     height: 32px;
     align-items: center;
     fill: currentColor;
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
     @media screen and(min-width: 768px) {
         width: 34px;
@@ -169,14 +172,24 @@ color: #fcfcfc;
     font-size: 14px;
     margin-right: 5px;
     color: #7a7a7a;
+    padding-top: 16px;
+    padding-bottom: 62px;
 
     @media (max-width: 767px) {
         line-height: 152%;
+        
     }
 
     @media (min-width: 768px) {
         line-height: 186%;
         letter-spacing: 0.02em;
+        padding-top: 14px;
+        padding-bottom: 14px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        padding-top: 12px;
+        padding-bottom: 12px;
     }
 }
 
