@@ -4,13 +4,12 @@
     
     .gallery-wrapper {
       position: absolute;
-      width: 279px;
-        height: 130px; 
-        top: 24px;
+      width: 90%;
+        height: auto; 
+        top: 60px;
         left: 50%;
         transform: translate(-50%, -50%);
       @include scr(tablet) {
-        
         width: 704px;
         height: 327px; 
         top: 50%;
