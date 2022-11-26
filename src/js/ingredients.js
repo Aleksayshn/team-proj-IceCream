@@ -6,12 +6,23 @@
     };
   
   refs.openModalBtns.forEach(btn => {
-    btn.addEventListener("click", toggleModal);
+    btn.addEventListener("click", openModal);
   });
-    refs.closeModalBtn.addEventListener("click", toggleModal);
+    refs.closeModalBtn.addEventListener("click", closeModal);
   
   
-  function toggleModal() {
-      refs.modal.classList.toggle("is-hidden");
-    }
-  })();
+  function openModal() {
+    refs.modal.classList.remove("is-hidden");
+  document.body.style.overflow = 'hidden';
+  }
+
+  function closeModal() {
+    refs.modal.classList.add("is-hidden");
+  document.body.style.overflow = 'scroll';
+  }
+
+  
+
+
+})();
+  
