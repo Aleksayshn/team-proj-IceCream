@@ -8,12 +8,13 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Roboto:wght@700&family=Seymour+One&display=swap"
-      rel="stylesheet">
-      <link
+      rel="stylesheet"
+    />
+    <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
     />
-    <link rel="stylesheet" href="./sass/index.scss">
+    <link rel="stylesheet" href="./sass/index.scss" />
     <script type="module" src="./index.js"></script>
   </head>
   <body>
@@ -26,24 +27,24 @@
     <include src="./partials/customer-reviews.html"></include>
     <include src="./partials/contacts.html"></include>
     <include src="./partials/footer.html"></include>
-     <include src="./partials/ingredients.html"></include>
-     <include src="./partials/franchise.html"></include>
+    <include src="./partials/modal-franchise.html"></include>
+    <include src="./partials/ingredients.html"></include>
+    <include src="./partials/our-locations.html"></include>
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
 
     <script>
-      var swiper = new Swiper(".gallery-wrapper", {
+      var swiper = new Swiper('.gallery-wrapper', {
         autoplay: {
           pauseOnMouseEnter: true,
           delay: 1000,
-        }
+        },
       });
-      var swiper = new Swiper(".review-wrapper", {
+      var swiper = new Swiper('.review-wrapper', {
         pagination: {
           el: '.swiper-pagination',
-          clickable: true,  
+          clickable: true,
         },
       });
     </script>
-   
   </body>
 </html>

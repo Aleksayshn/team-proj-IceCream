@@ -30,7 +30,7 @@
       <li class="contacts__item">
         <p class="contacts__area">FOODTRUCK</p>
         <div class="contacts__address">
-          <p>Los Angeles</p>
+          <p class="contacts__city">Los Angeles</p>
           <p class="contacts__street">
             1003 Manhattan Ave, Manhattan Beach, CA 90263, USA
           </p>
@@ -55,7 +55,7 @@
       <li class="contacts__item">
         <p class="contacts__area">CAFE</p>
         <div class="contacts__address">
-          <p>New York</p>
+          <p class="contacts__city">New York</p>
           <p class="contacts__street">
             726 Sterling Pl, Brooklyn, NY 11222, USA
           </p>
@@ -80,12 +80,28 @@
     </ul>
 
     <ul class="contacts-btn-list">
-      <li><button type="button" class="contacts-btn-list__item--locations">
-        Our Locations<svg class="contacts__btn-icon" width="5px" height="10px"><use href="./images/icon.svg/symbol-defs.svg#icon-line"></use></svg>
-      </button></li>
-      <li><button type="button" class="contacts-btn-list__item--franchise">Franchise<svg class="contacts__btn-icon" width="5px" height="10px"><use href="./images/icon.svg/symbol-defs.svg#icon-line"></use></svg></button></li>
+      <li>
+        <button
+          type="button"
+          class="contacts-btn-list__item--locations"
+          data-modal-open-location
+        >
+          Our Locations<svg
+            class="contacts__btn-icon"
+            width="5px"
+            height="10px"
+          >
+            <use href="./images/icon.svg/symbol-defs.svg#icon-line"></use>
+          </svg>
+        </button>
+      </li>
+      <li>
+        <button type="button" class="contacts-btn-list__item--franchise" data-franchise-open>
+          Franchise<svg class="contacts__btn-icon" width="5px" height="10px">
+            <use href="./images/icon.svg/symbol-defs.svg#icon-line"></use>
+          </svg>
+        </button>
+      </li>
     </ul>
-
-
   </div>
 </section>

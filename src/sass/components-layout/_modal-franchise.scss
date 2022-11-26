@@ -1,0 +1,23 @@
+.modal-franchise {
+  padding: 28px;
+
+  @include scr($type: desktop) {
+    padding: 32px 60px;
+  }
+}
+
+.modal__header-franchise {
+  margin-bottom: 20px;
+
+  @include scr($type: desktop) {
+    margin-bottom: 24px;
+  }
+}
+
+.modal__desc-franchise {
+  margin-bottom: 24px;
+
+  @include scr($type: desktop) {
+    margin-bottom: 32px;
+  }
+}
