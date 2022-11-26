@@ -172,6 +172,7 @@
   font-size: 14px;
   line-height: 1.29;
   text-align: center;
+  cursor: url('/src/images/icon.svg/cursor.svg'), auto;
 
   @include scr($type: tablet) {
     margin-top: 48px;

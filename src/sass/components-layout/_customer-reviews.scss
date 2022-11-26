@@ -106,3 +106,10 @@
     background-color: #84A178;
   }
 }
+.swiper-pagination-bullet {
+  background-color: #84A178;
+}
+
+.swiper-pagination-bullet:hover {
+  cursor: url('/src/images/icon.svg/cursor.svg'), auto;
+}

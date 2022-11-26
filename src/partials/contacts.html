@@ -5,7 +5,7 @@
       <li class="contacts__item">
         <p class="contacts__area">CAFE</p>
         <div class="contacts__address">
-          <p>Chicago</p>
+          <p class="contacts__city">Chicago</p>
           <p class="contacts__street">
             10340 Ridgeland Ave, Chicago&nbsp;Ridge, IL 60415, USA
           </p>
@@ -19,7 +19,7 @@
           <p class="contacts__hours">08:00 AM - 16:00 PM</p>
         </div>
         <div class="contacts__contact">
-          <a class="contacts__link" href="tel:+610383766284"
+          <a class="contacts__link contact-line" href="tel:+610383766284"
             >+61(0) 383 766 284</a
           >
           <a class="contacts__link" href="mailto:noreply@envato.com"
@@ -44,7 +44,7 @@
           <p class="contacts__hours">08:00 AM - 16:00 PM</p>
         </div>
         <div class="contacts__contact">
-          <a class="contacts__link" href="tel:+610383766284"
+          <a class="contacts__link contact-line" href="tel:+610383766284"
             >+61(0) 383 766 284</a
           >
           <a class="contacts__link" href="mailto:noreply@envato.com"
@@ -69,18 +69,23 @@
           <p class="contacts__hours">08:00 AM - 16:00 PM</p>
         </div>
         <div class="contacts__contact">
-          <a class="contacts__link" href="tel:+610383766284"
+          <a class="contacts__link contact-line" href="tel:+610383766284"
             >+61(0) 383 766 284</a
           >
-          <a class="contacts__link" href="mailto:noreply@envato.com"
+          <a class="contacts__link contact-tel" href="mailto:noreply@envato.com"
             >noreply@envato.com</a
           >
         </div>
       </li>
     </ul>
-    <button class="contacts__button" type="button">Our Locations</button>
-    <button class="contacts__button contacts__button--reversed" type="button">
-      Franchise
-    </button>
+
+    <ul class="contacts-btn-list">
+      <li><button type="button" class="contacts-btn-list__item--locations">
+        Our Locations<svg class="contacts__btn-icon" width="5px" height="10px"><use href="./images/icon.svg/symbol-defs.svg#icon-line"></use></svg>
+      </button></li>
+      <li><button type="button" class="contacts-btn-list__item--franchise">Franchise<svg class="contacts__btn-icon" width="5px" height="10px"><use href="./images/icon.svg/symbol-defs.svg#icon-line"></use></svg></button></li>
+    </ul>
+
+
   </div>
 </section>
