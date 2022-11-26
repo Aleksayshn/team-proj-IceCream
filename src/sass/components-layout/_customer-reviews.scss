@@ -5,6 +5,8 @@
     display: block;
     position: relative;
     padding-top: 218px;
+    padding-bottom: 124px;
+    
     margin-left: auto;
     margin-right: auto;
 
@@ -20,6 +22,7 @@
 
   @include scr(desktop) {
     padding-top: 451px;
+    padding-bottom: 124px;
     background-image: url('/src/images/gallery/desktop/mainbgr-desk@1x.jpg');
     @include retina {
       background-image: url('/src/images/gallery/desktop/mainbgr-desk@2x.jpg');
@@ -102,4 +105,11 @@
   &:hover {
     background-color: #84A178;
   }
+}
+.swiper-pagination-bullet {
+  background-color: #84A178;
+}
+
+.swiper-pagination-bullet:hover {
+  cursor: url('/src/images/icon.svg/cursor.svg'), auto;
 }
