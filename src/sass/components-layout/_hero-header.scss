@@ -390,19 +390,12 @@
         -webkit-animation: slide-right 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
         animation: slide-right 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 
-        > a {
-            font-family: "Montserrat";
-            font-style: normal;
-            font-weight: 600;
-            font-size: 8px;
-            line-height: 10px;
-            color: var(--clr-text-dark);
-
-            @media screen and (min-width: 1200px) {
-                font-size: 14px;
-                line-height: 18px;
-            }
-        }
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 8px;
+        line-height: 10px;
+        color: var(--clr-text-dark);
 
         @-webkit-keyframes slide-right {
             0% {
@@ -441,6 +434,10 @@
         @media screen and (min-width: 1200px) {
             width: 134px;
             height: 42px;
+            margin-right: 12px;
+
+            font-size: 14px;
+            line-height: 18px;
         }
     }
 
@@ -455,20 +452,13 @@
         background-color: transparent;
         cursor: url("/src/images/icon.svg/cursor.svg"), auto;
 
-        > a {
-            font-family: "Montserrat";
-            font-style: normal;
-            font-weight: 600;
-            font-size: 8px;
-            line-height: 10px;
-            color: var(--clr-accent);
-            text-decoration-line: underline;
-
-            @media screen and (min-width: 1200px) {
-                font-size: 14px;
-                line-height: 17px;
-            }
-        }
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 8px;
+        line-height: 10px;
+        color: var(--clr-accent);
+        text-decoration-line: underline;
 
         // animation appearance
 
@@ -510,6 +500,9 @@
         @media screen and (min-width: 1200px) {
             width: 154px;
             height: 40px;
+
+            font-size: 14px;
+            line-height: 17px;
         }
     }
 
