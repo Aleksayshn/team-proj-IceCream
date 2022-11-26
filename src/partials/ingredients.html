@@ -1,105 +1,107 @@
-<div class="ingredients">
-  <p class="ingredients__title">Chololate icecream</p>
-  <button class="ingredients-close-button" data-modal-close>
-    <svg class="ingredients-icon" width="11" height="11">
-      <use href="./images/icon.svg/symbol-defs.svg#nav-close"></use>
-    </svg>
-  </button>
-  <div class="ingredients__ellipse-main">
-    <picture class="ingredients__images">
-      <source
-        media="(min-width: 1200px)"
-        srcset="./images/ingredients/ingredients-lg@1x.png"
-        srcset="./images/ingredients/ingredients-lg@2x.png"
-      />
-      <source
-        media="(min-width: 768px)"
-        srcset="./images/ingredients/ingredients-md@1x.png"
-        srcset="./images/ingredients/ingredients-md@2x.png"
-      />
-      <source
-        media="(max-width: 767px)"
-        srcset="./images/ingredients/ingredients-sm@1x.png"
-        srcset="./images/ingredients/ingredients-sm@2x.png"
-      />
-      <!-- default -->
-      <img
-        alt="ice cream"
-        class="ingredients__images"
-        src="./images/ingredients/ingredients-sm@1x.png"
-        width="131"
-        height="131"
-        loading="lazy"
-      />
-    </picture>
-  </div>
-  <ul class="ingredients__list-first">
-    <li class="ingredients__item-first">
-      <div class="ingredients__ellipse-first">kcal</div>
-      <div class="ingredients__ellipse-second">320</div>
-    </li>
-    <li class="ingredients__item-first">
-      <div class="ingredients__ellipse-first">Prote...</div>
-      <div class="ingredients__ellipse-second">4g</div>
-    </li>
-    <li class="ingredients__item-first">
-      <div class="ingredients__ellipse-first">Fats</div>
-      <div class="ingredients__ellipse-second">8,2g</div>
-    </li>
-    <li class="ingredients__item-first">
-      <div class="ingredients__ellipse-first">Carbs</div>
-      <div class="ingredients__ellipse-second">40,4g</div>
-    </li>
-  </ul>
-  <div class="ingredients__body">
-    <p class="ingredients__name">Ingredients</p>
-    <ul class="ingredients__list-second">
-      <li class="ingredients__item-second"><span>Milk</span>100ml</li>
-      <li class="ingredients__item-second">
-        <span>Belgian chocolate</span>20g
+<div class="backdrop__ingredients is-hidden" data-modal-ingredients>
+  <div class="ingredients">
+    <p class="ingredients__title">Chololate icecream</p>
+    <button class="ingredients-close-button" data-modal-close-ingredients>
+      <svg class="ingredients-icon" width="11" height="11">
+        <use href="./images/icon.svg/symbol-defs.svg#nav-close"></use>
+      </svg>
+    </button>
+    <div class="ingredients__ellipse-main">
+      <picture class="ingredients__images">
+        <source
+          media="(min-width: 1200px)"
+          srcset="./images/ingredients/ingredients-lg@1x.png"
+          srcset="./images/ingredients/ingredients-lg@2x.png"
+        />
+        <source
+          media="(min-width: 768px)"
+          srcset="./images/ingredients/ingredients-md@1x.png"
+          srcset="./images/ingredients/ingredients-md@2x.png"
+        />
+        <source
+          media="(max-width: 767px)"
+          srcset="./images/ingredients/ingredients-sm@1x.png"
+          srcset="./images/ingredients/ingredients-sm@2x.png"
+        />
+        <!-- default -->
+        <img
+          alt="ice cream"
+          class="ingredients__images"
+          src="./images/ingredients/ingredients-sm@1x.png"
+          width="131"
+          height="131"
+          loading="lazy"
+        />
+      </picture>
+    </div>
+    <ul class="ingredients__list-first">
+      <li class="ingredients__item-first">
+        <div class="ingredients__ellipse-first">kcal</div>
+        <div class="ingredients__ellipse-second">320</div>
       </li>
-      <li class="ingredients__item-second"><span>Cream</span>150 ml</li>
-      <li class="ingredients__item-second"><span>Cocoa powder</span>30g</li>
-      <li class="ingredients__item-second"><span>Sugar</span>40g</li>
-      <li class="ingredients__item-second"><span>Vanilla sugar</span>10g</li>
+      <li class="ingredients__item-first">
+        <div class="ingredients__ellipse-first">Prote...</div>
+        <div class="ingredients__ellipse-second">4g</div>
+      </li>
+      <li class="ingredients__item-first">
+        <div class="ingredients__ellipse-first">Fats</div>
+        <div class="ingredients__ellipse-second">8,2g</div>
+      </li>
+      <li class="ingredients__item-first">
+        <div class="ingredients__ellipse-first">Carbs</div>
+        <div class="ingredients__ellipse-second">40,4g</div>
+      </li>
     </ul>
+    <div class="ingredients__body">
+      <p class="ingredients__name">Ingredients</p>
+      <ul class="ingredients__list-second">
+        <li class="ingredients__item-second"><span>Milk</span>100ml</li>
+        <li class="ingredients__item-second">
+          <span>Belgian chocolate</span>20g
+        </li>
+        <li class="ingredients__item-second"><span>Cream</span>150 ml</li>
+        <li class="ingredients__item-second"><span>Cocoa powder</span>30g</li>
+        <li class="ingredients__item-second"><span>Sugar</span>40g</li>
+        <li class="ingredients__item-second"><span>Vanilla sugar</span>10g</li>
+      </ul>
+    </div>
+    <form class="ingredients__form">
+      <div class="ingredients__input-field">
+        <label for="user-name"></label>
+
+        <input
+          type="text"
+          class="ingredients__modal-input"
+          name="user-name"
+          id="user-name"
+          minlength="2"
+          placeholder="Name"
+          required
+        />
+      </div>
+      <div class="ingredients__input-field">
+        <label for="user-phone"></label>
+
+        <input
+          type="tel"
+          class="ingredients__modal-input"
+          name="user-phone"
+          id="user-phone"
+          minlength="2"
+          placeholder="Phone"
+          required
+        />
+      </div>
+      <div class="ingredients__comment-field">
+        <label for="user-comment"></label>
+        <textarea
+          name="user-comment"
+          id="user-comment"
+          class="ingredients__modal-input"
+          placeholder="Comment"
+        ></textarea>
+      </div>
+      <button type="submit" class="ingredients__send-button">Submit</button>
+    </form>
   </div>
-  <form class="ingredients__form">
-    <div class="ingredients__input-field">
-      <label for="user-name">
-
-      <input
-        type="text"
-        class="ingredients__modal-input"
-        name="user-name"
-        id="user-name"
-        minlength="2"
-        placeholder="Name"
-        required
-      />
-    </div>
-    <div class="ingredients__input-field">
-      <label  for="user-phone">
-
-      <input
-        type="tel"
-        class="ingredients__modal-input"
-        name="user-phone"
-        id="user-phone"
-        minlength="2"
-        placeholder="Phone"
-        required
-      />
-    </div>
-    <div class="ingredients__comment-field">
-      <label for="user-comment">
-      <textarea
-        name="user-comment"
-        id="user-comment"
-        class="ingredients__modal-input"
-        placeholder="Comment"
-      ></textarea>
-    </div>
-    <button type="submit" class="ingredients__send-button">Submit</button>
-  </form>
 </div>
