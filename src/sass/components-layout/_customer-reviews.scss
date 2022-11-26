@@ -3,7 +3,7 @@
     padding-top: 181px;
     margin-left: auto;
     margin-right: auto;
-    padding-bottom: 74px;
+    padding-bottom: 393px;
 
     background-position: center;
     background-repeat: no-repeat;
@@ -15,7 +15,7 @@
 
   @include scr(tablet) {
     padding-top: 218px;
-    padding-bottom: 124px;
+    padding-bottom: 384px;
     background-image: url('/src/images/gallery/tablet/mainbgr-tab@1x.jpg');
     @include retina {
       background-image: url('/src/images/gallery/tablet/mainbgr-tab@2x.jpg');
@@ -24,7 +24,7 @@
 
   @include scr(desktop) {
     padding-top: 451px;
-    padding-bottom: 124px;
+    padding-bottom: 196px;
     background-image: url('/src/images/gallery/desktop/mainbgr-desk@1x.jpg');
     @include retina {
       background-image: url('/src/images/gallery/desktop/mainbgr-desk@2x.jpg');
