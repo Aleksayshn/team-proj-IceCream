@@ -1,7 +1,8 @@
 .contacts {
   background-color: var(--clr-brand);
-  padding-top: 962px;
-
+  padding-top: 1022px;
+  // background-image: linear-gradient(transparent 373px, #84a178 373px);
+  // padding: 20px 15px;
   @media screen and (min-width: 768px) {
     padding-top: 284px;
   }
@@ -17,6 +18,8 @@
 
 .contacts__list {
   position: absolute;
+  left: 0;
+  right: 0;
   bottom: 132px;
   display: flex;
   flex-wrap: wrap;
@@ -37,7 +40,7 @@
 
 .contacts__item {
   width: 100%;
-  max-width: 440px;
+  width: 270px;
   font-weight: 500;
   font-size: 12px;
   line-height: 1.86;
@@ -66,6 +69,10 @@
 }
 
 .contacts__area {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 16px;
   max-width: 130px;
   padding-left: 23px;
   padding-right: 22px;
@@ -77,8 +84,7 @@
   font-weight: 500;
   line-height: calc(22 / 12);
   letter-spacing: 0.04;
-  text-align: center;
-  display: inline-block;
+  
   margin-bottom: 20px;
   @media screen and (min-width: 768px) {
     font-size: 16px;
@@ -140,7 +146,6 @@
   color: var(--clr-bg-normal);
   display: flex;
   flex-direction: column;
-  margin-top: 8px;
   position: relative;
   cursor: url('/src/images/icon.svg/cursor.svg'), auto;
   @media screen and (min-width: 768px) {
