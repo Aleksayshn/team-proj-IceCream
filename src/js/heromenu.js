@@ -56,9 +56,9 @@ document.addEventListener('click', () => {
 
 (() => {
   const refs = {
-    openModalBtn: document.querySelector("[data-modal-hero-open]"),
-    closeModalBtn: document.querySelector("[data-modal-hero-close]"),
-    modal: document.querySelector("[data-modal-hero]"),
+    openModalBtn: document.querySelector("[data-hero-open]"),
+    closeModalBtn: document.querySelector("[data-hero-close]"),
+    modal: document.querySelector("[data-hero]"),
     body: document.querySelector("body"),
   };
 
