@@ -33,3 +33,40 @@ valueDisplays.forEach((valueDisplay) => {
 
   }, duration);
 });
+
+
+////CURSOR
+
+const cursor = document.querySelector('.cursor');
+
+document.addEventListener('mousemove', e => {
+  cursor.setAttribute("style", "top: " + (e.pageY - 10) + "px; left: " + (e.pageX - 10) + "px;")
+})
+
+document.addEventListener('click', () => {
+  cursor.classList.add("expand");
+
+  setTimeout(() => {
+    cursor.classList.remove("expand");
+  }, 500)
+})
+
+
+////modal window
+
+(() => {
+  const refs = {
+    openModalBtn: document.querySelector("[data-hero-open]"),
+    closeModalBtn: document.querySelector("[data-hero-close]"),
+    modal: document.querySelector("[data-hero]"),
+    body: document.querySelector("body"),
+  };
+
+  refs.openModalBtn.addEventListener("click", toggleModal);
+  refs.closeModalBtn.addEventListener("click", toggleModal);
+
+  function toggleModal() {
+    refs.modal.classList.toggle("is-hidden");
+    refs.body.classList.remove("no-scroll");
+  }
+})();
