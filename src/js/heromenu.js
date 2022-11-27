@@ -50,3 +50,23 @@ document.addEventListener('click', () => {
     cursor.classList.remove("expand");
   }, 500)
 })
+
+
+////modal window
+
+(() => {
+  const refs = {
+    openModalBtn: document.querySelector("[data-modal-hero-open]"),
+    closeModalBtn: document.querySelector("[data-modal-hero-close]"),
+    modal: document.querySelector("[data-modal-hero]"),
+    body: document.querySelector("body"),
+  };
+
+  refs.openModalBtn.addEventListener("click", toggleModal);
+  refs.closeModalBtn.addEventListener("click", toggleModal);
+
+  function toggleModal() {
+    refs.modal.classList.toggle("is-hidden");
+    refs.body.classList.remove("no-scroll");
+  }
+})();
