@@ -27,6 +27,16 @@
   text-transform: uppercase;
   margin-bottom: 148px;
   color: var(--clr-text-dark);
+
+  @include scr($type: tablet) {
+    font-size: 22px;
+    margin-bottom: 200px;
+  }
+
+  @include scr($type: desktop) {
+    font-size: 30px;
+    margin-bottom: 303px;
+  }
 }
 
 .products__title-second {
@@ -34,6 +44,14 @@
   font-weight: 400;
   font-size: 30px;
   letter-spacing: 0.04em;
+
+  @include scr($type: tablet) {
+    font-size: 34px;
+  }
+
+  @include scr($type: desktop) {
+    font-size: 36px;
+  }
 }
 
 .products__list {
@@ -51,9 +69,10 @@
   border-radius: 24px;
   box-shadow: (0px 4px 4px rgba(0, 0, 0, 0.25));
   width: 280px;
-  height: 420px;
   &:not(:last-child) {
-    margin-bottom: 164px;
+    @include scr($type: mobile-only) {
+      margin-bottom: 164px;
+    }
   }
 
   &:nth-child(2) {
@@ -71,7 +90,6 @@
   @include scr($type: tablet) {
     // width: calc((100% - 58px) / 3);
     width: 224px;
-    height: 428px;
     padding-top: 106px;
     &:not(:last-child) {
       margin-right: 16px;
@@ -83,7 +101,6 @@
 
   @include scr($type: desktop) {
     width: 370.16px;
-    height: 718.68px;
     padding: 165.16px 62px 60px 60px;
     margin-bottom: 0;
     &:not(:last-child) {
@@ -105,13 +122,19 @@
 
 .products__info {
   margin-top: 40px;
+  margin-bottom: 117px;
   font-weight: 400;
   font-size: 14px;
   text-align: center;
   color: var(--clr-text-dark);
 
+  @include scr($type: tablet) {
+    margin-bottom: 83px;
+  }
+
   @include scr($type: desktop) {
     margin-top: 65px;
+    margin-bottom: 66px;
   }
 }
 
@@ -125,23 +148,22 @@
 
 .products_images {
   position: absolute;
-  width: 200.33px;
-  height: 199.68px;
+  width: 200px;
+  height: 200px;
   top: 0;
   border-radius: 50%;
   overflow: hidden;
   box-shadow: 0px 5.34219px 20.0332px rgba(10, 136, 23, 0.25);
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -60%);
   left: 50%;
+
+  @include scr($type: desktop) {
+    width: 303px;
+    height: 303px;
+  }
 }
 
 .products__ellipse {
-  background-color: linear-gradient(
-      0deg,
-      rgba(156, 190, 143, 0.7),
-      rgba(156, 190, 143, 0.7)
-    ),
-    #d9d9d9;
   width: 200.33px;
   height: 199.68px;
   position: absolute;
@@ -149,33 +171,20 @@
   border-radius: 50%;
   overflow: hidden;
   box-shadow: 0px 5.34219px 20.0332px rgba(10, 136, 23, 0.25);
-  transform: translate(-50%, -45%);
+  transform: translate(-50%, -55%);
   left: 50%;
 
-  &:nth-child(2) {
-    background-color: linear-gradient(
-        0deg,
-        rgba(248, 210, 78, 0.7),
-        rgba(248, 210, 78, 0.7)
-      ),
-      #d9d9d9;
-  }
-
-  &:nth-child(3) {
-    background-color: linear-gradient(
-        0deg,
-        rgba(213, 117, 63, 0.7),
-        rgba(213, 117, 63, 0.7)
-      ),
-      #d9d9d9;
+  @include scr($type: desktop) {
+    width: 303px;
+    height: 303px;
   }
 }
 
 .products__button {
   display: block;
+  margin-top: auto;
   border: none;
   background-color: transparent;
-  margin: auto auto 0 auto;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   cursor: url('/src/images/icon.svg/cursor.svg'), auto;
 
