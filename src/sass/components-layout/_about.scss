@@ -76,16 +76,16 @@
 }
 
 .about__images {
-  width: 278.19px;
-  height: 278.25px;
+  width: 280px;
+  height: 280px;
 
   @include scr($type: tablet) {
-    width: 336px;
-    height: 355.88px;
+    width: 356px;
+    height: 356px;
   }
 
   @include scr($type: desktop) {
-    width: 500px;
+    width: 529px;
     height: 529px;
   }
 }
