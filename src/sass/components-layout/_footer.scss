@@ -9,7 +9,7 @@
     @include scr(tablet) {
         display: flex;
         justify-content: space-between;
-        align-items: flex-start;
+        align-items: center;
     }
     @include scr(desktop) {
         padding-top: 64px;
@@ -18,6 +18,7 @@
 }
 
 .footer__text {
+    margin: 0 0 10px;
     font-style: normal;
     font-weight: 700;
     font-size: 18px;
@@ -72,6 +73,7 @@
 .social {
     display: flex;
     justify-content: flex-end;
+    
     gap: 36px;
     margin-bottom: 38px;
 
@@ -176,12 +178,12 @@ color: #fcfcfc;
     padding-bottom: 62px;
 
     @media (max-width: 767px) {
-        line-height: 152%;
+        line-height: 1.52;
         
     }
 
     @media (min-width: 768px) {
-        line-height: 186%;
+        line-height: 1.86;
         letter-spacing: 0.02em;
         padding-top: 14px;
         padding-bottom: 14px;
@@ -198,11 +200,15 @@ color: #fcfcfc;
     font-size: 14px;
 
     @media (max-width: 767px) {
-        line-height: 152%;
+        line-height: 1.52;
     }
 
     @media (min-width: 768px) {
-        line-height: 186%;
+        line-height: 1.86;
         letter-spacing: 0.02em;
     }
+}
+
+.social__item {
+    padding-top: 47px;
 }
