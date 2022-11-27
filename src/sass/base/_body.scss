@@ -2,5 +2,62 @@ body {
     font-family: var(--main-font);
     font-size: 16px;
     line-height: calc(28 / 16);
-    color: #FCFCFC;
+    color: #fcfcfc;
+    cursor: url("/src/images/icon.svg/cursor.svg"), pointer;
+}
+.cursor {
+    width: 31px;
+    height: 31px;
+    border: 1px solid var(--clr-brand-darkest);
+    border-radius: 50%;
+    position: absolute;
+    transition-duration: 200ms;
+    transition-timing-function: ease-out;
+    animation: cursorAnim 0.5s infinite alternate;
+    pointer-events: none;
+    top: -8px;
+    left: -8px;
+
+    &::after {
+        content: "";
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        border: 8px solid var(--clr-accent);
+        border-radius: 50%;
+        opacity: 0.5;
+
+        animation: cursorAnim2 0.5s infinite alternate;
+    }
+}
+
+@keyframes cursorAnim {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(0.7);
+    }
+}
+
+@keyframes cursorAnim2 {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(0.4);
+    }
+}
+
+@keyframes cursorAnim3 {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(3);
+    }
+    100% {
+        transform: scale(1);
+        opacity: 0;
+    }
 }
