@@ -172,7 +172,6 @@
         align-items: center;
         justify-content: space-around;
         overflow: auto;
-
         @media screen and (min-width: 768px) {
             padding-top: 140px;
             padding-bottom: auto;
@@ -251,7 +250,7 @@
 
 .hero {
     background-color: var(--clr-brand);
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
     background-image: url("./../images/hero/background/substrate-mob-1x.png");
 
@@ -286,7 +285,6 @@
     background-repeat: no-repeat;
     background-position: bottom;
     background-attachment: scroll;
-    background-size: auto;
 
     &__container {
         display: block;

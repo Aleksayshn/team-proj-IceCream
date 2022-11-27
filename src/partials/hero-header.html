@@ -1,4 +1,4 @@
-<section class="first" id="home">
+<section class="first">
   <!--_____________HEADER______________-->
   <div class="header">
     <div class="container">
@@ -68,7 +68,7 @@
             <use href="./images/icon.svg/symbol-defs.svg#nav-open"></use>
           </svg>
         </button>
-        <ul class="nav__list">
+        <ul class="nav__list" id="home">
           <li class="li nav__item">
             <a href="#home" class="nav__link">Home</a>
           </li>
@@ -161,105 +161,112 @@
           </nav>
           <button type="button" class="mob__button">
             Buy now<svg width="12" height="12">
-            <use href="./images/icon.svg/symbol-defs.svg#nav-arrow"></use>
-          </svg>
+              <use href="./images/icon.svg/symbol-defs.svg#nav-arrow"></use>
+            </svg>
           </button>
         </div>
       </div>
     </div>
+  </div>
 
+  <!--__________________________HERO__________________________-->
 
-    <!---__________________________HERO__________________________----->
-
-    <div class="hero" id="home">
-      <!------------------------Column 1------------------------>
-        <div class="container hero__container">
-          <div class="hero__column1 column1">
-            <h1 class="column1__title">ice cream made with passion</h1>
-            <div class="column1__wrap">
-                <a href="#products" class="column1__btn1">Products</a>
-                <a href="#about" class="column1__btn2">How it’s made?</a>
-            </div>
-            <div class="column1__wrap2">
-                <picture>
-                  <!-- tablet -->
-                    <source
-                      media="(min-width: 768px)"
-                      srcset="
-                      ./images/Webp/tomuch-tab@1x.webp 1x,
-                      ./images/Webp/tomuch-tab@2x.webp 2x
-                      "
-                      type="image/webp"
-                    />
-                    <source
-                      media="(min-width: 768px)"
-                      srcset="
-                      ./images/tablet/tomuch-tab@1x.png 1x,
-                      ./images/tablet/tomuch-tab@2x.png 2x
-                      "
-                    />
-                    <!-- desktop -->
-                    <source
-                      media="(min-width: 1200px)"
-                      srcset="
-                      ./images/Webp/tomuch-desk@1x.webp 1x,
-                      ./images/Webp/tomuch-desk@2x.webp 2x
-                      "
-                      type="image/webp"
-                    />
-                    <source
-                      media="(min-width: 1200px)"
-                      srcset="
-                        ./images/desktop/tomuch-desk@1x.png 1x,
-                        ./images/desktop/tomuch-desk@2x.png 2x
-                      "
-                    />
-                    <!-- default -->
-                    <img
-                      src="./images/tablet/tomuch-tab@1x.png"
-                      alt="ice crem"
-                      class="column1__img2"
-                      loading="lazy"
-                    />
-                  </picture>
-                  <ul>
-                    <li class="column1__subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et</li>
-                    <li><svg width="41" height="16" class="column1__arrow"><use href="./images/icon.svg/symbol-defs.svg#hero-arrow"></use></svg></li>
-                  </ul>
-            </div>
-          </div>
-          <!------------------------Column 2------------------------>
-          
-            <div class="hero__column2 column2">
-              <img
-                srcset="
-                ./images/hero/ice-cream-smiles-desk.png 484w,
-                  ./images/hero/ice-cream-smiles-desk-2x.png 968w,
-                  ./images/hero/ice-cream-smiles-tab.png 270w,
-                  ./images/hero/ice-cream-smiles-tab-2x.png 540w,
-                ./images/hero/ice-cream-smiles-mob.png 170w,
-                  ./images/hero/ice-cream-smiles-mob-2x.png 340w
-                "
-                src="./images/hero/ice-cream-smiles-mob.png"
-                sizes="(min-width: 1200px) 484px, (min-width: 768px) 270px, (min-width: 480px) 170px, 100vw"
-                alt="ice cream"
-                class="column2__img"
-              />
-            </div>
-          
-          <!------------------------Column 3------------------------>
-            <div class="hero__column3 column3">
-              <ul>
-                <li class="column3__list">
-                  <p class="column3__statistic num" data-val="16"></p>
-                  <p class="column3__subline">cafes</p>
-                </li>
-                <li class="column3__list">
-                  <p class="column3__statistic num" data-val="23"></p>
-                  <p class="column3__subline">food trucks</p>
-                </li>
-              </ul>
-            </div>
+  <div class="hero">
+    <!--______________________column1___________________-->
+    <div class="container hero__container">
+      <div class="hero__column1 column1">
+        <h1 class="column1__title">ice cream made with passion</h1>
+        <div class="column1__wrap">
+          <a href="#products" class="column1__btn1">Products</a>
+          <a href="#about" class="column1__btn2">How it’s made?</a>
         </div>
+        <div class="column1__wrap2">
+          <picture>
+            <!-- tablet -->
+            <source
+              media="(min-width: 768px)"
+              srcset="
+                ./images/Webp/tomuch-tab@1x.webp 1x,
+                ./images/Webp/tomuch-tab@2x.webp 2x
+              "
+              type="image/webp"
+            />
+            <source
+              media="(min-width: 768px)"
+              srcset="
+                ./images/tablet/tomuch-tab@1x.png 1x,
+                ./images/tablet/tomuch-tab@2x.png 2x
+              "
+            />
+            <!-- desktop -->
+            <source
+              media="(min-width: 1200px)"
+              srcset="
+                ./images/Webp/tomuch-desk@1x.webp 1x,
+                ./images/Webp/tomuch-desk@2x.webp 2x
+              "
+              type="image/webp"
+            />
+            <source
+              media="(min-width: 1200px)"
+              srcset="
+                ./images/desktop/tomuch-desk@1x.png 1x,
+                ./images/desktop/tomuch-desk@2x.png 2x
+              "
+            />
+            <!-- default -->
+            <img
+              src="./images/tablet/tomuch-tab@1x.png"
+              alt="ice crem"
+              class="column1__img2"
+              loading="lazy"
+            />
+          </picture>
+          <ul>
+            <li class="column1__subtitle">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et
+            </li>
+            <li>
+              <svg width="41" height="16" class="column1__arrow">
+                <use href="./images/icon.svg/symbol-defs.svg#hero-arrow"></use>
+              </svg>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!--_____________________Column 2___________________________-->
+
+      <div class="hero__column2 column2">
+        <img
+          srcset="
+            ./images/hero/ice-cream-smiles-desk.png    484w,
+            ./images/hero/ice-cream-smiles-desk-2x.png 968w,
+            ./images/hero/ice-cream-smiles-tab.png     270w,
+            ./images/hero/ice-cream-smiles-tab-2x.png  540w,
+            ./images/hero/ice-cream-smiles-mob.png     170w,
+            ./images/hero/ice-cream-smiles-mob-2x.png  340w
+          "
+          src="./images/hero/ice-cream-smiles-mob.png"
+          sizes="(min-width: 1200px) 484px, (min-width: 768px) 270px, (min-width: 480px) 170px, 100vw"
+          alt="ice cream"
+          class="column2__img"
+        />
+      </div>
+
+      <!--___________________Column 3______________________-->
+      <div class="hero__column3 column3">
+        <ul>
+          <li class="column3__list">
+            <p class="column3__statistic num" data-val="16"></p>
+            <p class="column3__subline">cafes</p>
+          </li>
+          <li class="column3__list">
+            <p class="column3__statistic num" data-val="23"></p>
+            <p class="column3__subline">food trucks</p>
+          </li>
+        </ul>
+      </div>
+    </div>
   </div>
 </section>
