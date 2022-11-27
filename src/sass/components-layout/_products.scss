@@ -100,8 +100,8 @@
   }
 
   @include scr($type: desktop) {
-    width: 370.16px;
-    padding: 165.16px 62px 60px 60px;
+    width: 370px;
+    padding: 165px 62px 60px 60px;
     margin-bottom: 0;
     &:not(:last-child) {
       margin-right: 16px;
@@ -164,8 +164,8 @@
 }
 
 .products__ellipse {
-  width: 200.33px;
-  height: 199.68px;
+  width: 200px;
+  height: 199px;
   position: absolute;
   top: 0;
   border-radius: 50%;

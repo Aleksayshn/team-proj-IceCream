@@ -9,13 +9,9 @@
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
   overflow: hidden;
   overflow-y:scroll;
+  z-index: 5;
    }
 
-.is-hidden {
-    visibility: hidden;
-    opacity: 0;
-    pointer-events: none;
-  }
 
 .read-modal {
   position: absolute;

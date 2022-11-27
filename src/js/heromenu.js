@@ -54,19 +54,19 @@ document.addEventListener('click', () => {
 
 ////modal window
 
-(() => {
-  const refs = {
-    openModalBtn: document.querySelector("[data-hero-open]"),
-    closeModalBtn: document.querySelector("[data-hero-close]"),
-    modal: document.querySelector("[data-hero]"),
-    body: document.querySelector("body"),
-  };
+// (() => {
+//   const refs = {
+//     openModalBtn: document.querySelector("[data-hero-open]"),
+//     closeModalBtn: document.querySelector("[data-hero-close]"),
+//     modal: document.querySelector("[data-hero]"),
+//     body: document.querySelector("body"),
+//   };
 
-  refs.openModalBtn.addEventListener("click", toggleModal);
-  refs.closeModalBtn.addEventListener("click", toggleModal);
+//   refs.openModalBtn.addEventListener("click", toggleModal);
+//   refs.closeModalBtn.addEventListener("click", toggleModal);
 
-  function toggleModal() {
-    refs.modal.classList.toggle("is-hidden");
-    refs.body.classList.remove("no-scroll");
-  }
-})();
+//   function toggleModal() {
+//     refs.modal.classList.toggle("is-hidden");
+//     refs.body.classList.remove("no-scroll");
+//   }
+// })();
