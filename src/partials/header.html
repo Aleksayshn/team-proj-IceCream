@@ -1,7 +1,5 @@
-<section class="first">
-  <h2 class="visually-hidden">site navigation</h2>
-  <div class="header">
-      <div class="container">
+  <header class="first">
+  <div class="container">
         <nav class="nav">
           <a href="#home" class="logo nav__logo">
             <picture>
@@ -89,83 +87,85 @@
               <use href="./images/icon.svg/symbol-defs.svg#nav-arrow"></use>
             </svg>
           </button>
+
+           <!--MOBILE MENU-->
+ <div class="mob-menu flex is-hidden" data-menu>
+  <div>
+    <button type="button" class="menu-close" data-menu-close>
+      <svg width="20" height="20">
+        <use href="./images/icon.svg/symbol-defs.svg#nav-close"></use>
+      </svg>
+    </button>
+    <a href="index.html" class="logo mob__logo">
+      <picture>
+        <!-- tablet -->
+        <source
+          media="(min-width: 768px)"
+          srcset="
+            ./images/logo/logo-plan-1x.webp 1x,
+            ./images/logo/logo-plan-2x.webp 2x
+          "
+          type="image/webp"
+        />
+        <source
+          media="(min-width: 768px)"
+          srcset="
+            ./images/logo/logo-plan-1x.png 1x,
+            ./images/logo/logo-plan-2x.png 2x
+          "
+        />
+        <!-- mobile -->
+        <source
+          media="(max-width: 767px)"
+          srcset="
+            ./images/logo/logo-mob-1x.webp 1x,
+            ./images/logo/logo-mob-1x.webp 2x
+          "
+          type="image/webp"
+        />
+        <source
+          media="(max-width: 767px)"
+          srcset="
+            ./images/logo/logo-mob-1x.png 1x,
+            ./images/logo/logo-mob-1x.png 2x
+          "
+        />
+        <!-- default -->
+        <img
+          src="./images/logo/logo-mob-1x.png"
+          alt="site logo"
+          width="41"
+          height="37"
+          loading="lazy"
+        />
+      </picture>
+    </a>
+    
+        <ul class="mob__list">
+          <li class="li mob__item">
+            <a href="#home" class="mob__link">Home</a>
+          </li>
+          <li class="li mob__item">
+            <a href="#about" class="mob__link">How it’s made?</a>
+          </li>
+          <li class="li mob__item">
+            <a href="#products" class="mob__link">Our products</a>
+          </li>
+          <li class="li mob__item">
+            <a href="#contact" class="mob__link">Contact</a>
+          </li>
+        </ul>
+      
+      <button type="button" class="mob__button" data-hero-open>
+        Buy now<svg width="12" height="12">
+          <use href="./images/icon.svg/symbol-defs.svg#nav-arrow"></use>
+        </svg>
+      </button>
+
+      
         </nav>
-  
-        <!--MOBILE MENU-->
-        <div class="mob is-hidden" data-menu>
-          <a href="index.html" class="logo mob__logo">
-            <picture>
-              <!-- tablet -->
-              <source
-                media="(min-width: 768px)"
-                srcset="
-                  ./images/logo/logo-plan-1x.webp 1x,
-                  ./images/logo/logo-plan-2x.webp 2x
-                "
-                type="image/webp"
-              />
-              <source
-                media="(min-width: 768px)"
-                srcset="
-                  ./images/logo/logo-plan-1x.png 1x,
-                  ./images/logo/logo-plan-2x.png 2x
-                "
-              />
-              <!-- mobile -->
-              <source
-                media="(max-width: 767px)"
-                srcset="
-                  ./images/logo/logo-mob-1x.webp 1x,
-                  ./images/logo/logo-mob-1x.webp 2x
-                "
-                type="image/webp"
-              />
-              <source
-                media="(max-width: 767px)"
-                srcset="
-                  ./images/logo/logo-mob-1x.png 1x,
-                  ./images/logo/logo-mob-1x.png 2x
-                "
-              />
-              <!-- default -->
-              <img
-                src="./images/logo/logo-mob-1x.png"
-                alt="site logo"
-                width="41"
-                height="37"
-                loading="lazy"
-              />
-            </picture>
-          </a>
-          <button type="button" class="mob__close" data-menu-close>
-            <svg width="20" height="20">
-              <use href="./images/icon.svg/symbol-defs.svg#nav-close"></use>
-            </svg>
-          </button>
-          <div class="mob__container">
-            <nav class="mob__nav">
-              <ul class="mob__list">
-                <li class="li mob__item">
-                  <a href="#home" class="mob__link">Home</a>
-                </li>
-                <li class="li mob__item">
-                  <a href="#about" class="mob__link">How it’s made?</a>
-                </li>
-                <li class="li mob__item">
-                  <a href="#products" class="mob__link">Our products</a>
-                </li>
-                <li class="li mob__item">
-                  <a href="#contact" class="mob__link">Contact</a>
-                </li>
-              </ul>
-            </nav>
-            <button type="button" class="mob__button" data-hero-open>
-              Buy now<svg width="12" height="12">
-                <use href="./images/icon.svg/symbol-defs.svg#nav-arrow"></use>
-              </svg>
-            </button>
-          </div>
-        </div>
-      </div>
-    </div>
-</section>
+
+        
+
+  </div>
+  </header>

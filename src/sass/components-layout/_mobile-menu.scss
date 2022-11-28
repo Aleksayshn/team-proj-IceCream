@@ -1,0 +1,130 @@
+
+.mob-menu {
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    background-color: var(--clr-brand);
+    top: 0;
+    right: 0;
+    padding-top: 20px;
+    padding-right: 32px;
+    padding-left: 32px;
+    padding-bottom: 63px;
+    
+    z-index: 999;
+}
+
+.menu-close:hover, .menu-close:focus {
+  fill: var(--clr-text-normal);
+}
+
+.menu-close svg {
+
+}
+
+.mob__logo {
+        width: 40px;
+        height: 37px;
+
+        position: absolute;
+        top: 12px;
+        left: 32px;
+    }
+
+  
+  
+  .flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .menu-close {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+   color: var(--clr-text-normal);
+    border: none;
+    margin-left: auto;
+    cursor: pointer;
+  }
+
+  .mob__list {
+    padding-top: 52px;
+    padding-bottom: 63px;
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    text-align: center;
+    align-items: center;
+    justify-content: space-around;
+    overflow: auto;
+
+    @media screen and (min-width: 768px) {
+        padding-top: 76px;
+        padding-bottom: auto;
+    }
+}
+
+.mob__link {
+    font-size: 32px;
+    line-height: 39px;
+    font-weight: 700;
+    color: var(--clr-text-normal);
+    text-decoration: none;
+    
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
+    &:hover,
+    &:focus,
+    &:active {
+        color: var(--clr-text-dark);
+    }
+}
+
+
+.mob__button {
+    margin-right: auto;
+    margin-left: auto;
+    width: 152px;
+    height: 42px;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    padding: 12px 34px;
+    background-color: var(--clr-accent);
+    color: var(--clr-text-dark);
+    border-radius: 10px;
+    border: none;
+    width: 152px;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        stroke 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    stroke: var(--clr-text-dark);
+    cursor: url("/src/images/icon.svg/cursor.svg"), auto;
+
+    &:hover {
+        background: var(--clr-brand-darkest);
+    }
+    &:focus {
+        background: var(--clr-brand-darkest);
+        color: var(--clr-text-normal);
+        stroke: var(--clr-text-normal);
+    }
+    @media screen and (min-width: 768px) {
+      display: none;
+      }
+      svg {
+        margin-left: 7px;
+        stroke: currentColor;
+    }
+}
